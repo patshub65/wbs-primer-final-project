@@ -1,0 +1,140 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+#logo-wall {
+  background-color: #0b4b3c;
+  display: flex;
+  padding: 5rem 1rem;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-div {
+  background-color: aqua;
+}
+
+#logo-wall svg {
+  width: 100px;
+  height: 100px;
+  opacity: 0.9;
+}
+
+/* Path is used to change the color of the icon (svg) */
+
+#bitcoin path {
+  fill: #eab300;
+}
+
+#codefresh path {
+  fill: #08b1ab;
+}
+
+#commodore path {
+  fill: #1e2a4e;
+}
+
+#fila path {
+  fill: #002d62;
+}
+
+#fluke path {
+  fill: #ffc20e;
+}
+
+#g2g path {
+  fill: #ed1c24;
+}
+
+#hackthebox path {
+  fill: #9fef00;
+}
+
+#phosphoricons path {
+  fill: #3c402b;
+}
+
+#platformio path {
+  fill: #f5822a;
+}
+
+#resharper path {
+  fill: #000000;
+}
+
+#tokyometro path {
+  fill: #149dd3;
+}
