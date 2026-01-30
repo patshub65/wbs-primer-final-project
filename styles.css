@@ -75,66 +75,86 @@ h6 {
 }
 
 #logo-wall {
-  background-color: #0b4b3c;
+  background-color: #fff;
+  padding: 5rem 0;
+  overflow: hidden;
+}
+
+.logo-track {
   display: flex;
-  padding: 5rem 1rem;
-  gap: 5rem;
+  width: max-content;
+  will-change: transform;
+  animation: logo-scroll 30s linear infinite;
+}
+
+.logo-group {
+  display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 10rem;
+  padding: 0 5rem;
+}
+
+@keyframes logo-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .logo-div {
-  background-color: aqua;
+  padding: 1rem;
 }
 
-#logo-wall svg {
-  width: 100px;
-  height: 100px;
+.logo-icon {
+  width: 90px;
+  height: 90px;
   opacity: 0.9;
 }
 
 /* Path is used to change the color of the icon (svg) */
 
-#bitcoin path {
+.logo-icon-bitcoin path {
   fill: #eab300;
 }
 
-#codefresh path {
+.logo-icon-codefresh path {
   fill: #08b1ab;
 }
 
-#commodore path {
+.logo-icon-commodore path {
   fill: #1e2a4e;
 }
 
-#fila path {
+.logo-icon-fila path {
   fill: #002d62;
 }
 
-#fluke path {
+.logo-icon-fluke path {
   fill: #ffc20e;
 }
 
-#g2g path {
+.logo-icon-g2g path {
   fill: #ed1c24;
 }
 
-#hackthebox path {
+.logo-icon-hackthebox path {
   fill: #9fef00;
 }
 
-#phosphoricons path {
+.logo-icon-phosphoricons path {
   fill: #3c402b;
 }
 
-#platformio path {
+.logo-icon-platformio path {
   fill: #f5822a;
 }
 
-#resharper path {
+.logo-icon-resharper path {
   fill: #000000;
 }
 
-#tokyometro path {
+.logo-icon-tokyometro path {
   fill: #149dd3;
 }
