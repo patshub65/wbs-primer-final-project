@@ -1,0 +1,179 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/*
+  11. Patrick's nav & Font
+*/
+
+.roboto-robotfont {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+a {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    text-decoration: none;
+    
+}
+
+#logo a {
+    display: block;
+}
+
+#logo img {
+    display: block;
+    max-width: 100px;
+    height: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d6e5f6;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1rem; 
+    list-style: none;
+    color: #4c4d5f;
+}
+
+nav ul a {
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 1rem;
+    color: #4c4d5f;
+
+}
+
+.main-cta {
+    color: white;
+    background-color: #00b289;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    display: inline-block;
+    border-color: white;
+
+}
+
+/*
+  Patrick's Hero section
+*/
+
+.hero {
+    background-color: whitesmoke;
+    min-height: 600px;
+    padding: 4rem 6rem;
+}
+
+.hero-content {
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family: Roboto;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 200px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
