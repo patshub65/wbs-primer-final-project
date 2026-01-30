@@ -1,5 +1,7 @@
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -23,18 +25,31 @@ body {
 }
 
 /* 6. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
 /* 7. Inherit fonts for form controls */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
 /* 8. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -42,14 +57,20 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
 /*
   10. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
@@ -62,72 +83,67 @@ h1, h2, h3, h4, h5, h6 {
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
 
 p {
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 a {
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-    text-decoration: none;
-    
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  text-decoration: none;
 }
 
 #logo a {
-    display: block;
+  display: block;
 }
 
 #logo img {
-    display: block;
-    max-width: 100px;
-    height: auto;
+  display: block;
+  max-width: 100px;
+  height: auto;
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #d6e5f6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d6e5f6;
 }
 
 nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 1rem; 
-    list-style: none;
-    color: #4c4d5f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 1rem;
+  list-style: none;
+  color: #4c4d5f;
 }
 
 nav ul a {
-    text-decoration: none;
-    font-weight: 500;
-    margin-right: 1rem;
-    color: #4c4d5f;
-
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 1rem;
+  color: #4c4d5f;
 }
 
 .main-cta {
-    color: white;
-    background-color: #00b289;
-    padding: 0.75rem 1rem;
-    border-radius: 4px;
-    display: inline-block;
-    border-color: white;
-
+  color: white;
+  background-color: #00b289;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  display: inline-block;
+  border-color: white;
 }
 
 /*
@@ -135,45 +151,128 @@ nav ul a {
 */
 
 .hero {
-    background-color: whitesmoke;
-    min-height: 600px;
-    padding: 4rem 6rem;
+  background-color: whitesmoke;
+  min-height: 600px;
+  padding: 4rem 6rem;
 }
 
 .hero-content {
-    display: flex;
-    max-width: 1200px;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .hero-text {
-    flex: 1;
-    max-width: 50%;
+  flex: 1;
+  max-width: 50%;
 }
 
 .hero-text h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    font-family: Roboto;
-    margin-bottom: 1.5rem;
-    line-height: 1.1;
-
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: Roboto;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
 }
 
 .hero-text p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-    line-height: 1.6;
-
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
 }
 
 .hero-image {
-    flex: 1;
-    max-width: 200px;
+  flex: 1;
+  max-width: 200px;
 }
 
 .hero-image img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+}
+
+#logo-wall {
+  background-color: #fff;
+  padding: 5rem 0;
+  overflow: hidden;
+}
+
+.logo-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: logo-scroll 30s linear infinite;
+}
+
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  padding: 0 5rem;
+}
+
+@keyframes logo-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.logo-div {
+  padding: 1rem;
+}
+
+.logo-icon {
+  width: 90px;
+  height: 90px;
+  opacity: 0.9;
+}
+
+/* Path is used to change the color of the icon (svg) */
+
+.logo-icon-bitcoin path {
+  fill: #eab300;
+}
+
+.logo-icon-codefresh path {
+  fill: #08b1ab;
+}
+
+.logo-icon-commodore path {
+  fill: #1e2a4e;
+}
+
+.logo-icon-fila path {
+  fill: #002d62;
+}
+
+.logo-icon-fluke path {
+  fill: #ffc20e;
+}
+
+.logo-icon-g2g path {
+  fill: #ed1c24;
+}
+
+.logo-icon-hackthebox path {
+  fill: #9fef00;
+}
+
+.logo-icon-phosphoricons path {
+  fill: #3c402b;
+}
+
+.logo-icon-platformio path {
+  fill: #f5822a;
+}
+
+.logo-icon-resharper path {
+  fill: #000000;
+}
+
+.logo-icon-tokyometro path {
+  fill: #149dd3;
 }
