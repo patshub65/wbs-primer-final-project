@@ -302,22 +302,51 @@ nav ul a {
     flex-direction: column;
     text-align: center;
     padding: 4rem 2rem;
+    gap: 2rem;
+    background-color: #c9d5ff;
 
+}
+
+.heading-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: roboto;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: roboto;
+    font-size: 1.5rem;
 }
 
 .features {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 4rem;
 
 }
 
 .feature-icon {
     display: flex;
-    width: 80px;
+    width: 100px;
     height: auto;
     align-items: center;
     justify-content: center;
+    border-radius: 100%;
+    overflow: hidden;
+    padding: 0.5rem;
+    background-color: white;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 /* Testimonials section */
@@ -327,13 +356,46 @@ nav ul a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
+    padding: 2rem;
 }
 
 .testimonials {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
+
+#testimonial-id {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.review-item-solo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 70%;
+}
+
+.review-item-solo #featured {
+    font-size: 1.2rem;
+}
+
+#rest-testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c9d5ff;
+    padding: 2rem;
+    border-radius: 2rem;
+    gap: 2rem;
+}
+
 
 .review-item {
     display: flex;
@@ -351,7 +413,7 @@ nav ul a {
     display: flex;
 }
 
-.review img {
+.review-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -360,4 +422,5 @@ nav ul a {
 .review-text {
     text-align: center;
     font-size: 0.75rem;
+    max-width: 80%;
 }
