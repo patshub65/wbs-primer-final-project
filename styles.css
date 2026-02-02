@@ -276,3 +276,11 @@ nav ul a {
 .logo-icon-tokyometro path {
   fill: #149dd3;
 }
+
+#video {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0;
+}
